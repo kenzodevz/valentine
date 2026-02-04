@@ -1,11 +1,14 @@
 import { useEffect, useRef } from "react";
+
 export default function BackgroundMusic() {
   const audioRef = useRef(null);
 
   useEffect(() => {
     const playMusic = () => {
-      audioRef.current.volume = 0.4;
-      audioRef.current.play().catch(() => {});
+      if (audioRef.current) {
+        audioRef.current.volume = 0.4;
+        audioRef.current.play().catch(() => {});
+      }
       document.removeEventListener("click", playMusic);
     };
 
@@ -16,7 +19,7 @@ export default function BackgroundMusic() {
   return (
     <audio
       ref={audioRef}
-      src="/public/palagi.mp3"
+      src="/palagi.mp3"  // ✅ path relative to public folder
       loop
     />
   );

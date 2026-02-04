@@ -1,16 +1,15 @@
 import { useState } from "react";
 import "./PhotoSlider.css";
 
+// Correct paths: remove '/public'
 const photos = [
-  "/public/photo1.jpg",
-  "/public/photo2.jpg",
-  "/public/photo3.jpg",
-  "/public/photo4.jpg",
-  "/public/photo5.jpg",
-  "/public/photo6.jpg",
- 
+  "/photo1.jpg",
+  "/photo2.jpg",
+  "/photo3.jpg",
+  "/photo4.jpg",
+  "/photo5.jpg",
+  "/photo6.jpg",
 ];
-
 
 export default function PhotoSlider() {
   const [index, setIndex] = useState(0);
@@ -18,7 +17,6 @@ export default function PhotoSlider() {
   const next = () => {
     setIndex((prev) => (prev + 1) % photos.length);
   };
-
 
   const prev = () => {
     setIndex((prev) =>
