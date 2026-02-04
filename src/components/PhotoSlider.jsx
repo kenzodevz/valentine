@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./PhotoSlider.css";
 
 const photos = [
-  "/src/assets/photo1.jpg",
-  "/src/assets/photo2.jpg",
-  "/src/assets/photo3.jpg",
-  "/src/assets/photo4.jpg",
-  "/src/assets/photo5.jpg",
-  "/src/assets/photo6.jpg",
+  "/public/photo1.jpg",
+  "/public/photo2.jpg",
+  "/public/photo3.jpg",
+  "/public/photo4.jpg",
+  "/public/photo5.jpg",
+  "/public/photo6.jpg",
  
 ];
 

@@ -16,7 +16,7 @@ export default function BackgroundMusic() {
   return (
     <audio
       ref={audioRef}
-      src="/src/assets/palagi.mp3"
+      src="/public/palagi.mp3"
       loop
     />
   );
