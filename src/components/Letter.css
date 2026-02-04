@@ -1,0 +1,53 @@
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
+.letter-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}       
+
+.letter-card {
+  background: white;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: "Georgia", serif;
+  min-height: 300px;
+  align-items: flex-start
+}
+
+.letter-card h2 {
+  margin-bottom: 20px;
+  color: #e63946;
+}
+
+.letter-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.signature {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.typewriter {
+  white-space: pre-wrap;
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
